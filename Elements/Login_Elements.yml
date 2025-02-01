@@ -1,0 +1,3 @@
+username_field: xpath://input[@id='LoginForm_username']
+password_field: xpath://input[@id='LoginForm_password']
+signIn_button:  xpath://button[@class='btn pull-right btn-primary btn-lg']

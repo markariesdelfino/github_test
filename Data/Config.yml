@@ -1,0 +1,6 @@
+browser1:  headlesschrome
+browser2:  firefox
+url:  https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+short:  5s
+medium: 10s
+long: 15s
