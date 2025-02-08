@@ -1,6 +1,6 @@
-browser1:  headlesschrome
+browser1:  chrome
 browser2:  firefox
-url:  https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+url:  https://www.saucedemo.com/
 short:  5s
 medium: 10s
 long: 15s

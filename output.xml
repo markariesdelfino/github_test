@@ -1,74 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-01-31T10:56:33.143265" rpa="false" schemaversion="5">
-<suite id="s1" name="Login" source="c:\project\HRLITE\Test_cases\Login.robot">
-<test id="s1-t1" name="oValid Login1" line="54">
+<robot generator="Robot 7.2 (Python 3.12.8 on win32)" generated="2025-02-02T17:09:27.749103" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="c:\Jenkins-tutorial\HRLITE\Test_cases\Login.robot">
+<test id="s1-t1" name="oinValid Login2" line="63">
 <kw name="Launch Browser" owner="General_Controller" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-01-31T10:56:33.797899" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<msg time="2025-02-02T17:09:27.971095" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
 <arg>${url}</arg>
 <arg>${browser1}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-01-31T10:56:33.797538" elapsed="6.562024"/>
+<status status="PASS" start="2025-02-02T17:09:27.971095" elapsed="1.298242"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-01-31T10:56:40.359947" elapsed="0.028586"/>
+<status status="PASS" start="2025-02-02T17:09:29.270337" elapsed="0.021897"/>
 </kw>
 <kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
 <arg>5s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-01-31T10:56:40.389489" elapsed="0.002550"/>
+<status status="PASS" start="2025-02-02T17:09:29.292234" elapsed="0.002173"/>
 </kw>
-<status status="PASS" start="2025-01-31T10:56:33.796169" elapsed="6.596186"/>
+<status status="PASS" start="2025-02-02T17:09:27.970095" elapsed="1.324312"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-02-02T17:09:34.594953" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-02T17:09:34.595953" level="FAIL">Element '//input[@name='username']' not visible after 5 seconds.</msg>
 <arg>//input[@name='username']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-01-31T10:56:40.393438" elapsed="0.406754"/>
+<status status="FAIL" start="2025-02-02T17:09:29.294407" elapsed="5.302547">Element '//input[@name='username']' not visible after 5 seconds.</status>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-31T10:56:40.802027" level="INFO">Typing text 'Admin' into text field '//input[@name='username']'.</msg>
 <arg>//input[@name='username']</arg>
 <arg>Admin</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T10:56:40.801469" elapsed="0.136286"/>
+<status status="NOT RUN" start="2025-02-02T17:09:34.596954" elapsed="0.000999"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-01-31T10:56:40.940559" level="INFO">Typing password into text field '//input[@name='password']'.</msg>
-<msg time="2025-01-31T10:56:40.982982" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>//input[@name='password']</arg>
-<arg>admin123</arg>
+<arg>admin12y3</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T10:56:40.940058" elapsed="0.146436"/>
+<status status="NOT RUN" start="2025-02-02T17:09:34.597953" elapsed="0.000000"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-01-31T10:56:41.087617" level="INFO">Clicking button '//button[@type='submit']'.</msg>
 <arg>//button[@type='submit']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T10:56:41.087227" elapsed="1.234372"/>
+<status status="NOT RUN" start="2025-02-02T17:09:34.597953" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>//h6[text()='Dashboard']</arg>
+<arg>//p[text()='Invalid credentials']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-01-31T10:56:42.322534" elapsed="0.444302"/>
+<status status="NOT RUN" start="2025-02-02T17:09:34.597953" elapsed="0.000000"/>
 </kw>
 <kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2025-01-31T10:56:42.768122" elapsed="3.279111"/>
+<status status="PASS" start="2025-02-02T17:09:34.598954" elapsed="2.097543"/>
 </kw>
-<doc>Verify Valid Login</doc>
-<status status="PASS" start="2025-01-31T10:56:33.795036" elapsed="12.253508"/>
+<doc>Verify inValid Login</doc>
+<status status="FAIL" start="2025-02-02T17:09:27.970095" elapsed="8.726402">Element '//input[@name='username']' not visible after 5 seconds.</status>
 </test>
-<status status="PASS" start="2025-01-31T10:56:33.167121" elapsed="12.889440"/>
+<status status="FAIL" start="2025-02-02T17:09:27.754105" elapsed="8.943393"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Login" id="s1" pass="1" fail="0" skip="0">Login</stat>
+<stat name="Login" id="s1" pass="0" fail="1" skip="0">Login</stat>
 </suite>
 </statistics>
 <errors>
