@@ -11,7 +11,25 @@ pipeline {
            
             steps {
                 bat 'run'
-            }        
+            }
+                post {
+               
+                    always{
+                          
+                           
+
+                                allure([
+                                        includeProperties : false,
+                                        jdk: '',
+                                        properties: [],
+                                        reportBuildPolicy: 'ALWAYS',
+                                        results: [[path:'Test_cases/test_result/allure-results']]
+                                        ])
+                            
+                            
+                    }
+                   
+            }
         }
               
     }
