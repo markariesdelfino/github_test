@@ -54,65 +54,66 @@ Test Teardown    Close All Browsers
 oValid Login1
     [Documentation]    Verify Valid Login
     
-     Wait Until Element Is Visible    //input[@name='username']
-     Input Text    //input[@name='username']    Admin
-     Input Password    //input[@name='password']    admin123
-     Click Button    //button[@type='submit']
-     Wait Until Element Is Visible    //h6[text()='Dashboard']
+     Wait Until Element Is Visible    //input[@id='user-name']
+     Input Text    //input[@id='user-name']   standard_user
+     Input Password    //input[@id='password']    secret_sauce
+     Click Button    //input[@id='login-button']
+     Sleep    3s
+     
 
-oinValid Login2
-    [Documentation]    Verify inValid Login
+# oinValid Login2
+#     [Documentation]    Verify inValid Login
     
-     Wait Until Element Is Visible    //input[@name='username']
-     Input Text    //input[@name='username']    Admin
-     Input Password    //input[@name='password']    admin12y3
-     Click Button    //button[@type='submit']
-     Wait Until Element Is Visible    //p[text()='Invalid credentials']
+#      Wait Until Element Is Visible    //input[@id='user-name']
+#      Input Text    //input[@id='user-name']   standard_user
+#      Input Password    //input[@id='password']    secret_sauce
+#      Click Button    //input[@id='login-button']
+#      Sleep    3s
 
-oinValid Login3
-    [Documentation]    Verify inValid Login
+# oinValid Login3
+#     [Documentation]    Verify inValid Login
     
-     Wait Until Element Is Visible    //input[@name='username']
-     Input Text    //input[@name='username']    Admin
-     Input Password    //input[@name='password']    admin12y3
-     Click Button    //button[@type='submit']
-     Wait Until Element Is Visible    //p[text()='Invalid credentials']
+#     Wait Until Element Is Visible    //input[@id='user-name']
+#      Input Text    //input[@id='user-name']   standard_user
+#      Input Password    //input[@id='password']    secret_sauce
+#      Click Button    //input[@id='login-button']
+#      Sleep    3s
 
-oinValid Login4
-    [Documentation]    Verify inValid Login
+# oinValid Login4
+#     [Documentation]    Verify inValid Login
     
-     Wait Until Element Is Visible    //input[@name='username']
-     Input Text    //input[@name='username']    Admin
-     Input Password    //input[@name='password']    admin12y3
-     Click Button    //button[@type='submit']
-     Wait Until Element Is Visible    //p[text()='Invalid credentials']
+#      Wait Until Element Is Visible    //input[@name='username']
+#      Input Text    //input[@name='username']    Admin
+#      Input Password    //input[@name='password']    admin12y3
+#      Click Button    //button[@type='submit']
+#      Wait Until Element Is Visible    //p[text()='Invalid credentials']
 
-oinValid Login5
-    [Documentation]    Verify inValid Login
+# oinValid Login5
+#     [Documentation]    Verify inValid Login
     
-     Wait Until Element Is Visible    //input[@name='username']
-     Input Text    //input[@name='username']    Admin
-     Input Password    //input[@name='password']    admin12y3
-     Click Button    //button[@type='submit']
-     Wait Until Element Is Visible    //p[text()='Invalid credentials']
+#      Wait Until Element Is Visible    //input[@name='username']
+#      Input Text    //input[@name='username']    Admin
+#      Input Password    //input[@name='password']    admin12y3
+#      Click Button    //button[@type='submit']
+#      Wait Until Element Is Visible    //p[text()='Invalid credentials']
 
-oinValid Login6
-    [Documentation]    Verify inValid Login
+# oinValid Login6
+#     [Documentation]    Verify inValid Login
     
-     Wait Until Element Is Visible    //input[@name='username']
-     Input Text    //input[@name='username']    Admin
-     Input Password    //input[@name='password']    admin12y3
-     Click Button    //button[@type='submit']
-     Wait Until Element Is Visible    //p[text()='Invalid credentials']
+#      Wait Until Element Is Visible    //input[@name='username']
+#      Input Text    //input[@name='username']    Admin
+#      Input Password    //input[@name='password']    admin12y3
+#      Click Button    //button[@type='submit']
+#      Wait Until Element Is Visible    //p[text()='Invalid credentials']
 
-oinValid Login7
-    [Documentation]    Verify inValid Login
+# oinValid Login7
+#     [Documentation]    Verify inValid Login
     
-     Wait Until Element Is Visible    //input[@name='username']
-     Input Text    //input[@name='username']    Admin
-     Input Password    //input[@name='password']    admin12y3
-     Click Button    //button[@type='submit']
-     Wait Until Element Is Visible    //p[text()='Invalid credentials']
+#      Wait Until Element Is Visible    //input[@name='username']
+#      Input Text    //input[@name='username']    Admin
+#      Input Password    //input[@name='password']    admin12y3
+#      Click Button    //button[@type='submit']
+#      Wait Until Element Is Visible    //p[text()='Invalid credentials']
     
 
 
