@@ -10,7 +10,7 @@ pipeline {
         stage('test'){
            
             steps {
-                bat 'C:\\project\\HRLITE\\run.bat'
+                bat 'run'
             }        
 
             post {
